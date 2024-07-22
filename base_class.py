@@ -7,6 +7,6 @@ class all_base:
         self.pic = load_image(num)
 
 class terrain(all_base):
-    def __init__(self,can_pass):
+    def __init__(self, num, can_pass):
         super().__init__(num)
         self.can_pass = can_pass

@@ -10,7 +10,7 @@ def main():
 
 if __name__=="__main__":
     main()
-    ground = base_class.all_base(1077,False)
+    ground = base_class.terrain(1077,False)
     plt.imshow(ground.pic)
     plt.axis('on')
     plt.show()
