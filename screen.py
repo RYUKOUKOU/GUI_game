@@ -2,18 +2,30 @@ import tkinter as tk
 from tkinter import Canvas
 from picture_base import map_synthesis
 import config
-import time
+
+mark = 0
+canvas = None
 
 def click(e):
-    pass
+    global canvas, mark
+    mx = e.x
+    my = e.y
+    mark = 1 if mark == 0 else mark
 
-def main_area_base(canvas):
-    global image
+def screen_main():
+    global canvas, mark
+    if mark == 0:
+        canvas.create_text(config.width / 2, config.height / 2, text="START", fill="gold", font=config.F_L)
+    elif mark == 1:
+        canvas.delete("all")
+        map_area(canvas)
+        info_area(canvas)
+
+def map_area(canvas):
     canvas.delete("main_area")
     canvas.create_rectangle(0, 0, config.width - 304, config.height, fill="white", width=2, tags="main_area")
     image = map_synthesis(config.base_ground)
     canvas.create_image(0, 0, image=image, anchor=tk.NW)
-
 
 def info_area(canvas):
     canvas.delete("info_area")
@@ -21,15 +33,14 @@ def info_area(canvas):
     canvas.create_text(config.width - 150, 50, anchor="nw", text=info_text, fill="white", font=("Arial", 12), tags="info_area")
 
 def start():
+    global canvas
     root = tk.Tk()
     root.title("RPG GAME")
     root.resizable(False, False)
-    root.bind("<Button>", click)
-    
     canvas = tk.Canvas(root, width=config.width, height=config.height, bg="black")
     canvas.pack()
-    main_area_base(canvas)
+    root.bind("<Button>", click)
+    root.after(100, screen_main)
     root.mainloop()
 
-
-#start()
+start()
