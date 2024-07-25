@@ -10,7 +10,7 @@ def click(e):
     global canvas, mark
     mx = e.x
     my = e.y
-    mark = 1 if mark == 0 else mark
+    if mark == 0: mark = 1 ,screen_main()
 
 def screen_main():
     global canvas, mark
@@ -42,5 +42,5 @@ def start():
     root.bind("<Button>", click)
     root.after(100, screen_main)
     root.mainloop()
-
+    
 start()

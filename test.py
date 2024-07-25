@@ -1,9 +1,6 @@
-import tkinter as tk
-from PIL import Image, ImageTk
-import os
-import config
-from picture_base import load_image
+import random
 
-# 打印数组的大小
-print(len(config.base_ground))  # 输出 60
-print(len(config.base_ground[0]))  # 输出 100
+# 生成10个不重复的随机数，范围在1到1078之间
+random_numbers = random.sample(range(1, 1079), 10)
+
+print("生成的随机数:", random_numbers)
