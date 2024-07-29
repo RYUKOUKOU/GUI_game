@@ -4,7 +4,7 @@ import tkinter.messagebox
 from PIL import Image, ImageTk
 
 class MainWindow:
-    gameTitle = "连连看游戏"
+    gameTitle = "GUI GAME"
     windowWidth = 900
     windowHeigth = 800
     icons = []
