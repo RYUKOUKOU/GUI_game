@@ -9,15 +9,15 @@ A simple "Link Game" (连连看) implemented as a learning assignment.
 ## How to Start / ゲームの起動方法 / 游戏启动方法
 
 - :  
-  Run the code to create an instance of the `MainWindow` class. The game window will appear.  
+  Run the code 'GUI_game_v2.py'. The game window will appear.  
   From the menu bar, select `START` → `NEW` to begin the game and place icons.  
 
 - :  
-  コードを実行すると `MainWindow` クラスのインスタンスが作成され、ゲームウィンドウが表示されます。  
+  'GUI_game_v2.py'コードを実行するとインスタンスが作成され、ゲームウィンドウが表示されます。  
   メニューバーの「START」から「NEW」を選択すると、ゲームが開始され、アイコンが配置されます。  
 
 - :  
-  运行代码后会创建 `MainWindow` 类的实例，并显示游戏窗口。  
+  运行'GUI_game_v2.py'代码，显示游戏窗口。  
   在菜单栏选择 `START` → `NEW` 即可开始游戏并生成图标。  
 
 ---
