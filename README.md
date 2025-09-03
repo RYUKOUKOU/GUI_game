@@ -10,15 +10,15 @@ A simple "Link Game" (连连看) implemented as a learning assignment.
 
 - :  
   Run the code 'GUI_game_v2.py'. The game window will appear.  
-  From the menu bar, select `START` → `NEW` to begin the game and place icons.  
+  From the menu bar, select `START` to begin the game and place icons.  
 
 - :  
   'GUI_game_v2.py'コードを実行するとインスタンスが作成され、ゲームウィンドウが表示されます。  
-  メニューバーの「START」から「NEW」を選択すると、ゲームが開始され、アイコンが配置されます。  
+  メニューバーの「START」を選択すると、ゲームが開始され、アイコンが配置されます。  
 
 - :  
   运行'GUI_game_v2.py'代码，显示游戏窗口。  
-  在菜单栏选择 `START` → `NEW` 即可开始游戏并生成图标。  
+  在菜单栏选择 `START` 即可开始游戏并生成图标。  
 
 ---
 
